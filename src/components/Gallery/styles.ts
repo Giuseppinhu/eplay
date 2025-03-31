@@ -3,6 +3,8 @@ import { color } from '../../styles'
 
 export const Items = styled.ul`
   display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 `
 export const Action = styled.div`
   position: absolute;
@@ -15,13 +17,12 @@ export const Action = styled.div`
   align-items: center;
   justify-content: center;
   opacity: 0;
-  cursor: pointer;
   transition: opacity 0.5s ease;
 `
 
 export const Item = styled.li`
-  margin-right: 16px;
   position: relative;
+  cursor: zoom-in;
 
   > img {
     border: 2px solid ${color.white};
@@ -80,6 +81,8 @@ export const ModalContent = styled.div`
     }
 
     img {
+      height: 16px;
+      width: 16px;
       cursor: pointer;
     }
   }

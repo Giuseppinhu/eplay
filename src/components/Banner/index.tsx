@@ -1,28 +1,29 @@
 import Tag from '../Tags'
 import Button from '../Button'
-
-import { formatPrices } from '../ProductsList'
-import { Image, Price, Title } from './style'
+import Loader from '../Loader'
 
 import { useGetFeaturedGameQuery } from '../../services/api'
+import { formatPrices } from '../../utils'
+
+import * as S from './style'
 
 const Banner = () => {
   const { data: game } = useGetFeaturedGameQuery()
 
   if (!game) {
-    return <h3>Carregando...</h3>
+    return <Loader />
   }
 
   return (
-    <Image style={{ backgroundImage: `url(${game.media.cover})` }}>
+    <S.Image style={{ backgroundImage: `url(${game.media.cover})` }}>
       <div className="container">
         <Tag size="big">Destaque do dia</Tag>
         <div>
-          <Title>{game?.name}</Title>
-          <Price>
+          <S.Title>{game?.name}</S.Title>
+          <S.Price>
             De <span>{formatPrices(game.prices.old)}</span> <br />
             por apenas {formatPrices(game.prices.current)}
-          </Price>
+          </S.Price>
         </div>
         <Button
           title="Clique para aproveitar as ofertas"
@@ -32,7 +33,7 @@ const Banner = () => {
           Aproveitar
         </Button>
       </div>
-    </Image>
+    </S.Image>
   )
 }
 export default Banner

@@ -1,22 +1,18 @@
-import { Game } from '../../Pages/Home'
+import Loader from '../Loader'
 import Product from '../Product'
 
-import { Container, List } from './styles'
+import * as S from './styles'
+import { formatPrices } from '../../utils'
 
 export type Props = {
   title: string
   background: 'gray' | 'black'
-  games: Game[]
+  games?: Game[]
+  id?: string
+  isLoading: boolean
 }
 
-export const formatPrices = (price = 0) => {
-  return new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(price)
-}
-
-const ProductsList = ({ background, title, games }: Props) => {
+const ProductsList = ({ background, title, games, id, isLoading }: Props) => {
   const getGameTags = (game: Game) => {
     const tags = []
 
@@ -35,27 +31,32 @@ const ProductsList = ({ background, title, games }: Props) => {
     return tags
   }
 
+  if (isLoading) {
+    return <Loader />
+  }
+
   return (
-    <Container background={background}>
+    <S.Container id={id} background={background}>
       <div className="container">
         <h2>{title}</h2>
-        <List>
-          {games.map((game) => (
-            <li key={game.id}>
-              <Product
-                id={game.id}
-                title={game.name}
-                category={game.details.category}
-                description={game.description}
-                img={game.media.thumbnail}
-                infos={getGameTags(game)}
-                system={game.details.system}
-              />
-            </li>
-          ))}
-        </List>
+        <S.List>
+          {games &&
+            games.map((game) => (
+              <li key={game.id}>
+                <Product
+                  id={game.id}
+                  title={game.name}
+                  category={game.details.category}
+                  description={game.description}
+                  img={game.media.thumbnail}
+                  infos={getGameTags(game)}
+                  system={game.details.system}
+                />
+              </li>
+            ))}
+        </S.List>
       </div>
-    </Container>
+    </S.Container>
   )
 }
 
