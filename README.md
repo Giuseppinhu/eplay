@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# 🎮 Eplay – Sua loja de jogos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Eplay Banner](inserir-link-da-imagem-aqui)
 
-## Available Scripts
+## 🔍 Funcionalidades do Site
 
-In the project directory, you can run:
+- **Catálogo de Jogos**: Explore todos os jogos disponíveis e aproveite ofertas exclusivas.
+- **Página Detalhada dos Jogos**: Veja descrições específicas, gênero, desenvolvedor, classificação indicativa e muito mais.
+- **Galeria Multimídia**: Visualize imagens e vídeos de gameplay dos jogos.
+- **Checkout Simples e Rápido**: Compre seus jogos com facilidade e receba a chave de ativação diretamente no e-mail.
 
-### `npm start`
+### 🔗 Acesse o Projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+▶︎ [Clique aqui para acessar o Eplay](https://eplay-one.vercel.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** – Estrutura principal da aplicação com foco em componentização e UI reativa.
+- **React Router** – Navegação entre páginas sem recarregamento, proporcionando uma experiência fluida.
+- **Redux e RTK** – Gerenciamento global de estados e integração com APIs.
+- **TypeScript** – Tipagem estática para maior segurança e produtividade no desenvolvimento.
+- **Styled-Components** – Estilização dos componentes diretamente via JavaScript.
+- **Formik e Yup** – Gerenciamento de formulários com validações robustas e seguras.
+- **React Loader** – Indicadores de carregamento estilizados para melhorar a experiência do usuário.
+- **Design Responsivo** – Interface adaptada para desktop, tablets e dispositivos móveis.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎯 Objetivo do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Criar uma plataforma moderna de e-commerce voltada para o público gamer, oferecendo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Um catálogo organizado de jogos.
+- Experiência de compra otimizada e segura.
+- Checkout rápido com envio de chave por e-mail.
+- Layout atraente, funcional e responsivo.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> 💡 *Projeto desenvolvido como parte dos estudos práticos na EBAC, com foco em React, Redux Toolkit, integração com APIs REST, boas práticas de UI/UX, responsividade, tipagem com TypeScript e validação de formulários.*
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+📂 Sinta-se à vontade para contribuir, abrir issues ou enviar pull requests!
