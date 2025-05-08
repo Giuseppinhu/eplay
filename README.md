@@ -1,6 +1,6 @@
 # 🎮 Eplay – Sua loja de jogos
 
-![Eplay Banner](inserir-link-da-imagem-aqui)
+![Eplay Banner](https://giuseppinhu.github.io/portifolio/src/assets/projects/eplay.jpeg)
 
 ## 🔍 Funcionalidades do Site
 
